@@ -256,6 +256,7 @@
 // =====================================================================
 
 #area_label {
+[type!='residential'][type!='administrative'] {
   // Bring in labels gradually as one zooms in, bases on polygon area
   [zoom>=10][area>102400000],
   [zoom>=11][area>25600000],
@@ -324,6 +325,7 @@
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
+}
 }
    
 #poi[type='university'][zoom>=15],
